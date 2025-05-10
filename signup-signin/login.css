@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    text-align: center;
+    width: 360px;
+    padding-left: 200px;
+  padding-right: 200px;
+    border-radius: 10px;
+    background-color: #181818;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    width: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 34px;
+    margin-bottom: 25px;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+  
+  .social-btn {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+  }
+  
+  .social-btn .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  
+  .social-btn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  .social-btn:hover {
+    border-color: rgb(240, 244, 240);
+    box-shadow: 0 0 1px #fefefe, 0 0 5px #ecf1ed;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #b3b3b3;
+    margin: 20px 0;
+    margin-bottom: 50px;
+  }
+  
+  .continue-btn {
+    width: 100%;
+    background-color: #1ed760;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+
+  .login-container .social-btn.phone {
+    margin-bottom: 70px; /* Adds space after the "Continue with phone number" button */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+  }
+  
+  .signup {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+  }
+  
+  .signup a {
+    color: #1ed760;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* For mobile devices */
+@media (max-width: 600px) {
+    .login-container {
+      width: 90%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  
+    .social-btn {
+      padding: 12px 12px 12px 35px;
+      font-size: 14px;
+    }
+  
+    .social-btn .icon {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .social-btn img {
+      width: 18px;
+      height: 18px;
+    }
+  
+    input[type="text"] {
+      padding: 8px;
+    }
+  
+    .signup {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  }
+  
+  /* For tablet devices */
+  @media (max-width: 768px) {
+    .login-container {
+      width: 80%;
+    }
+  
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .social-btn {
+      padding: 12px 12px 12px 40px;
+      font-size: 16px;
+    }
+  
+    .social-btn .icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .social-btn img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    input[type="text"] {
+      padding: 10px;
+    }
+  
+    .signup {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+  }
+  
+  /* For larger screens (laptops/desktops) */
+  @media (min-width: 1024px) {
+    .login-container {
+      width: 360px; /* Keeping the original width */
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+  
+    h1 {
+      font-size: 34px;
+      margin-bottom: 25px;
+    }
+  
+    .social-btn {
+      padding: 12px 12px 12px 45px;
+    }
+  
+    input[type="text"] {
+      padding: 10px;
+    }
+  
+    .signup {
+      font-size: 14px;
+    }
+  }
+  

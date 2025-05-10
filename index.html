@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="close">
+          <img width="30" class="invert" src="img/close.svg" alt="" />
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img class="invert" src="img/logo.svg" alt="Logo" />
+          </div>
+          <ul>
+            <li><img class="invert" src="img/home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="img/search.svg" alt="" />Search</li>
+          </ul>
+        </div>
+
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="img/playlist.svg" alt="" />
+            <h2>Your Library</h2>
+          </div>
+
+          <div class="songList">
+            <ul></ul>
+          </div>
+
+          <div class="footer">
+            <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                >Safety & Privacy Center</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                >Privacy Policy</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                >Cookies</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                >About Ads</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                >Accessibility</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburgerContainer">
+              <img
+                width="40"
+                class="invert hamburger"
+                src="img/hamburger.svg"
+                alt=""
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                color="#000000"
+                fill="none"
+              >
+                <path
+                  d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                color="#000000"
+                fill="none"
+              >
+                <path
+                  d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h1>Spotify playlist</h1>
+          <div class="cardContainer">
+            <div data-folder="favsong" class="card">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141834"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <img
+                src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2B9NPr-default.jpg"
+                alt="album"
+              />
+              <h2>Happy Pills!</h2>
+              <p>Hit to boost your mood and fill you with happiness!</p>
+            </div>
+
+            <div data-folder="cs" class="card">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141834"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <img
+                src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2B9NPr-default.jpg"
+                alt="album"
+              />
+              <h2>Happy Pills!</h2>
+              <p>Hit to boost your mood and fill you with happiness!</p>
+            </div>
+          </div>
+
+
+
+          <!-- Trending Songs Section -->
+          <div class="trendingSongs">
+            <h1>Trending Songs</h1>
+            <div class="cardContainer">
+              <div data-folder="trendSongs" class="card">
+                <div class="play">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 20V4L19 12L5 20Z"
+                      stroke="#141834"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <img src="https://i.scdn.co/image/ab67616d00001e02072eb50e71dc4c4a04ad727c" alt="Trending 1" />
+                <h2>Aaj Bhi</h2>
+                <p>Vishal mishra</p>
+              </div>
+              <!-- Add more cards as needed -->
+            </div>
+          </div>
+
+          <!-- Popular Singers Section -->
+          <div class="popularSingers">
+            <h1>Popular Singers</h1>
+            <div class="cardContainer">
+              <div data-folder="arijit" class="card">
+                <div class="play">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 20V4L19 12L5 20Z"
+                      stroke="#141834"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arijit Singh" />
+                <h2>Arijit Singh</h2>
+                <p>Feel the emotions through his voice.</p>
+              </div>
+              <!-- Add more cards -->
+            </div>
+          </div>
+
+          <!-- Popular Radio Section -->
+          <div class="popularRadios">
+            <h1>Popular Radios</h1>
+            <div class="cardContainer">
+              <div data-folder="radio" class="card">
+                <div class="plays">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 20V4L19 12L5 20Z"
+                      stroke="#141834"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <img src="radios/alka/cover.jpg" alt="Radio One" />
+                <h2>Radio One</h2>
+                <p>Non-stop hit music!</p>
+              </div>
+              <!-- Add more cards -->
+            </div>
+            <div class="spacer"></div>
+          </div>
+        </div>
+        <div class="playbar">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="abovebar">
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+              <img width="35" id="previous" src="img/prevsong.svg" alt="" />
+              <img width="35" id="play" src="img/play.svg" alt="" />
+              <img width="35" id="next" src="img/nextsong.svg" alt="" />
+            </div>
+            <div class="timevol">
+              <div class="songtime"></div>
+              <div class="volume">
+                <img width="25" src="img/volume.svg" alt="" />
+                <div class="range">
+                  <input type="range" name="volume" id="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
